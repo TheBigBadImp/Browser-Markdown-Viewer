@@ -27,12 +27,12 @@ A simple **Markdown file viewer** that lets you open and display .md files direc
 ### <u>Markdown-Viewer after selecting a file</u>:
 #### <u>Golbal view</u>:
 <div style="width:80%; height:80%; border: 2px solid #4fc1ff; display: inline-block; padding: 5px; border-radius: 10px;">
-  <img src="FR_Markdown_Wiki-Exemple.png" alt="Screenshot 2">
+  <img src="FR_Markdown_Wiki-Example.png" alt="Screenshot 2">
 </div>
 
 #### <u>Titles, Paragraphs & subsections</u>:
 <div style="width:75%; height:75%; border: 2px solid #4fc1ff; display: inline-block; padding: 5px; border-radius: 10px;">
-  <img src="FR_Markdown_Wiki-Exemple2.png" alt="Screenshot 3">
+  <img src="FR_Markdown_Wiki-Example2.png" alt="Screenshot 3">
 </div>
 
 <br>
