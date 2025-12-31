@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Markdown Viewer</title>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <style>
+    body {
+      background-color: #1e1e1e;
+      color: #d4d4d4;
+      font-family: system-ui, sans-serif;
+      padding: 20px;
+    }
+    h1,h2,h3,h4,h5,h6 {
+      color: #eeeeee;
+    }
+    a {
+      color: #4fc1ff;
+    }
+    code {
+      background-color: #2d2d2d;
+      color: #c586c0;
+      padding: 2px 4px;
+      border-radius: 4px;
+      font-family: monospace;
+    }
+    pre {
+      background-color: #2d2d2d;
+      color: #dcdcaa;
+      padding: 10px;
+      border-radius: 6px;
+      overflow-x: auto;
+      font-family: monospace;
+    }
+  </style>
+</head>
+<body>
+  <h1>Markdown Viewer</h1>
+  <p>Simple tool to display Markdown (.md) files directly in your browser. Choose a file on your computer and the Markdown rendering will be displayed instantly.</p>
+  <input type="file" id="fileInput" accept=".md,.MD">
+  <hr style="border: none; border-top: 1px solid #2f2f2f; margin: 20px 0;">
+  <div id="markdown-content" style="margin-top:10px;"></div>
+  <script>
+    document.getElementById('fileInput').addEventListener('change', async (e) => {
+      const file = e.target.files[0];
+      if (!file) return;
+      const text = await file.text();
+      document.getElementById('markdown-content').innerHTML = marked.parse(text);
+    });
+  </script>
+</body>
+</html>
